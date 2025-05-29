@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>PsiPsi | Saúde Mental</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <nav>
+      <a href="index.html" class="logo">
+        <span>PsiPsi</span>
+        <img src="/img/logo psi psi transparente.png" alt="Ícone PsiPsi" class="logo-img">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#servicos" class="btn-servicos">Serviços</a></li>
+        <li><a href="sobre.html" class="btn-sobre">Sobre</a></li>
+        <li><a href="agendar.html" class="btn-nav">Agendar</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Saúde Mental com Excelência</h1>
+    <p>Terapias personalizadas com profissionais especializados para sua jornada emocional.</p>
+    <button class="btn-hero" onclick="window.location.href='agendar.html'">Agendar Consulta</button>
+  </div>
+</section>
+
+<section class="servicos" id="servicos">
+  <div class="container">
+    <h2 class="section-title">Nossos Serviços</h2>
+    <div class="cards-container">
+
+      <div class="card">
+        <i class="fas fa-brain"></i>
+        <h3>Terapia Individual</h3>
+        <p>Sessões personalizadas para adultos, abordando ansiedade, depressão e autoconhecimento.</p>
+        <div class="preco">R$ 130/sessão</div>
+        <a href="agendar.html?servico=individual" class="btn-hero">Saiba Mais</a>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-child"></i>
+        <h3>Ludoterapia</h3>
+        <p>Acompanhamento lúdico para crianças com dificuldades emocionais ou comportamentais.</p>
+        <div class="preco">R$ 110/sessão</div>
+        <a href="agendar.html?servico=ludoterapia" class="btn-hero">Saiba Mais</a>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-heart"></i>
+        <h3>Terapia de Casal</h3>
+        <p>Mediação de conflitos e fortalecimento de vínculos afetivos.</p>
+        <div class="preco">R$ 150/sessão</div>
+        <a href="agendar.html?servico=casal" class="btn-hero">Saiba Mais</a>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-users"></i>
+        <h3>Terapia Familiar</h3>
+        <p>Atendimento voltado para resolver conflitos familiares e melhorar a comunicação entre os membros.</p>
+        <div class="preco">R$ 165/sessão</div>
+        <a href="agendar.html?servico=familiar" class="btn-hero">Saiba Mais</a>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-hands-helping"></i>
+        <h3>Reabilitação</h3>
+        <p>Acompanhamento psicológico para recuperação emocional e fortalecimento pessoal.</p>
+        <div class="preco">R$ 155/sessão</div>
+        <a href="agendar.html?servico=reabilitacao" class="btn-hero">Saiba Mais</a>
+      </div>
+
+      <div class="card">
+        <i class="fas fa-user-tie"></i>
+        <h3>Orientação Profissional</h3>
+        <p>Suporte para tomada de decisões de carreira e desenvolvimento profissional.</p>
+        <div class="preco">R$ 100/sessão</div>
+        <a href="agendar.html?servico=orientacao" class="btn-hero">Saiba Mais</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
