@@ -1,0 +1,334 @@
+/* Variáveis de cores */
+:root {
+    --fundo: #F5F5F5; /* Fundo claro e acolhedor */
+    --fundo-claro: #EAEAEA; /* Fundo secundário */
+    --texto: #333333; /* Texto escuro para contraste */
+    --texto-secundario: #666666; /* Texto mais suave */
+    --azul-serenity: #93A9D1; /* Azul Serenity */
+    --lilas-psico: #A78AC2; /* Lilás suave */
+    --bege-psico: #E3D5C5; /* Bege neutro */
+}
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* === Header (permanece inalterado) === */
+header {
+    background-color: var(--fundo-claro);
+    padding: 20px 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: linear-gradient(to right, var(--azul-serenity), var(--lilas-psico));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+
+.logo-img {
+    display: block;
+    height: 60px;
+    width: auto;
+    margin-left: -5px;
+    vertical-align: middle;
+    transform: translateY(-3px);
+    filter: drop-shadow(3px 3px 6px rgba(0, 0, 0, 0.3));
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--texto);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--azul-serenity);
+}
+
+.btn-nav {
+    background: linear-gradient(to right, var(--lilas-psico), var(--azul-serenity));
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* === Hero Section (inalterada) === */
+.hero {
+    padding: 100px 0;
+    text-align: center;
+    background: linear-gradient(135deg, var(--bege-psico) 0%, var(--fundo-claro) 100%);
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, var(--azul-serenity), var(--lilas-psico));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: var(--texto-secundario);
+}
+
+.btn-hero {
+    background: linear-gradient(to right, var(--lilas-psico), var(--azul-serenity));
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-hero:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(147, 169, 209, 0.3);
+}
+
+/* === Serviços e Cards (inalterados) === */
+.servicos {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--azul-serenity);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--fundo-claro);
+    border-radius: 16px;
+    padding: 30px;
+    flex: 1 1 300px;
+    max-width: 350px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(147, 169, 209, 0.2);
+}
+
+.card i {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, var(--lilas-psico), var(--azul-serenity));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.card .preco {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 20px 0;
+    color: var(--azul-serenity);
+}
+
+.card .btn-hero {
+    margin-top: auto;
+    align-self: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* === Footer (inalterado) === */
+footer {
+    background-color: var(--fundo-claro);
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* =========================== */
+/* Estilos específicos para a página "Sobre" */
+/* =========================== */
+.sobre {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, var(--bege-psico) 0%, var(--fundo-claro) 100%);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    margin: 40px auto;
+    max-width: 1000px;
+}
+
+.sobre .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.sobre .logo-container img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.sobre h1 {
+    font-size: 3rem;
+    color: var(--azul-serenity);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+    color: var(--texto-secundario);
+    max-width: 800px;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+}
+
+/* Estilização do formulário */
+.agendar {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--bege-psico) 0%, var(--fundo-claro) 100%);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.agendar h1 {
+    font-size: 2.8rem;
+    color: var(--azul-serenity);
+    margin-bottom: 15px;
+}
+
+.agendar p {
+    font-size: 1.2rem;
+    color: var(--texto-secundario);
+    margin-bottom: 30px;
+}
+
+/* Estilização do container do formulário */
+.form-container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Campos do formulário */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--texto);
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--texto-secundario);
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #F9F9F9;
+}
+
+/* Botão de envio */
+button.btn-agendar {
+    background: linear-gradient(to right, var(--lilas-psico), var(--azul-serenity));
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button.btn-agendar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(147, 169, 209, 0.3);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .agendar h1 {
+        font-size: 2.4rem;
+    }
+
+    .form-container {
+        max-width: 90%;
+    }
+}
