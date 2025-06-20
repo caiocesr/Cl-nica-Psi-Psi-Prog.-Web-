@@ -1,15 +1,13 @@
-/* Variáveis de cores */
 :root {
-    --fundo: #F5F5F5; /* Fundo claro e acolhedor */
-    --fundo-claro: #EAEAEA; /* Fundo secundário */
-    --texto: #333333; /* Texto escuro para contraste */
-    --texto-secundario: #666666; /* Texto mais suave */
-    --azul-serenity: #93A9D1; /* Azul Serenity */
-    --lilas-psico: #A78AC2; /* Lilás suave */
-    --bege-psico: #E3D5C5; /* Bege neutro */
+    --fundo: #F5F5F5;
+    --fundo-claro: #EAEAEA;
+    --texto: #333333;
+    --texto-secundario: #666666;
+    --azul-serenity: #93A9D1;
+    --lilas-psico: #A78AC2;
+    --bege-psico: #E3D5C5;
 }
 
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +27,6 @@ body {
     padding: 20px;
 }
 
-/* === Header (permanece inalterado) === */
 header {
     background-color: var(--fundo-claro);
     padding: 20px 0;
@@ -89,7 +86,6 @@ nav {
     font-weight: 600;
 }
 
-/* === Hero Section (inalterada) === */
 .hero {
     padding: 100px 0;
     text-align: center;
@@ -127,7 +123,6 @@ nav {
     box-shadow: 0 10px 20px rgba(147, 169, 209, 0.3);
 }
 
-/* === Serviços e Cards (inalterados) === */
 .servicos {
     padding: 80px 0;
 }
@@ -188,7 +183,6 @@ nav {
     font-weight: 600;
 }
 
-/* === Footer (inalterado) === */
 footer {
     background-color: var(--fundo-claro);
     padding: 30px 0;
@@ -196,16 +190,12 @@ footer {
     margin-top: 50px;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
     }
 }
 
-/* =========================== */
-/* Estilos específicos para a página "Sobre" */
-/* =========================== */
 .sobre {
     padding: 100px 20px;
     background: linear-gradient(135deg, var(--bege-psico) 0%, var(--fundo-claro) 100%);
@@ -247,7 +237,6 @@ footer {
     line-height: 1.5;
 }
 
-/* Estilização do formulário */
 .agendar {
     text-align: center;
     padding: 80px 20px;
@@ -270,7 +259,6 @@ footer {
     margin-bottom: 30px;
 }
 
-/* Estilização do container do formulário */
 .form-container {
     background: white;
     padding: 40px;
@@ -280,7 +268,6 @@ footer {
     margin: 0 auto;
 }
 
-/* Campos do formulário */
 .form-group {
     margin-bottom: 20px;
     text-align: left;
@@ -303,7 +290,6 @@ input, select {
     background: #F9F9F9;
 }
 
-/* Botão de envio */
 button.btn-agendar {
     background: linear-gradient(to right, var(--lilas-psico), var(--azul-serenity));
     color: white;
@@ -322,7 +308,6 @@ button.btn-agendar:hover {
     box-shadow: 0 10px 20px rgba(147, 169, 209, 0.3);
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .agendar h1 {
         font-size: 2.4rem;
