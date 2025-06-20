@@ -32,7 +32,7 @@
     <h1>Agende sua Consulta</h1>
     <p>Preencha o formulário abaixo para reservar seu atendimento.</p>
 
-    <form action="#" method="POST">
+    <form id="appointmentForm">
       <div class="form-group">
         <label for="nome">Nome Completo:</label>
         <input type="text" id="nome" name="nome" required>
@@ -76,6 +76,31 @@
   </div>
 </section>
 
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-app.js"; // Usei a versão 10.12.3, é mais recente que 11.9.1
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-analytics.js"; // Usei a versão 10.12.3
+  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.3/firebase-firestore.js"; // IMPORTANTE: Nova linha para Firestore!
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyB4BDufrj7J9nba0z1l_joYo3zQY6UfONE",
+    authDomain: "psipsi-bffa9.firebaseapp.com",
+    projectId: "psipsi-bffa9",
+    storageBucket: "psipsi-bffa9.firebasestorage.app",
+    messagingSenderId: "784830256917",
+    appId: "1:784830256917:web:6c29f4a1c8023e04c43b1c",
+    measurementId: "G-HQE56W1KX3"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  const db = getFirestore(app);
+  window.db = db;
+  window.serverTimestamp = serverTimestamp;
+  window.collection = collection;
+  window.addDoc = addDoc;
+</script>
+
 <script src="script.js"></script>
+
 </body>
 </html>
